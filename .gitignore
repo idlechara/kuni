@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# kuni files
+build
+.vscode
+
+*.DS_store
