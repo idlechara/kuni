@@ -1,0 +1,31 @@
+{
+  "name": "kuni",
+  "version": "1.0.0",
+  "description": "A small microblogging framework to deploy static blogs",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-less": "^4.0.1",
+    "gulp-livereload": "^3.8.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-server-livereload": "^1.9.2",
+    "showdown": "^1.8.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KukyNekoi/kuni.git"
+  },
+  "author": "KuKy_NeKoi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KukyNekoi/kuni/issues"
+  },
+  "homepage": "https://github.com/KukyNekoi/kuni#readme"
+}
