@@ -90,9 +90,7 @@ var register_entry = function(label, template, root, directory, filename){
             let sourceFilePath      = `${root}${directory}${match[2]}`;
             let destinationFilePath = `${buildFolder}/${directory}${match[2]}`;
             try {
-                console.log(`moving ${sourceFilePath} to ${destinationFilePath}`);
                 fsExtra.copySync(sourceFilePath, destinationFilePath);
-                console.log(' success!');
             } catch (err) {
                 console.error(err);
             }
@@ -123,7 +121,6 @@ var register_entry = function(label, template, root, directory, filename){
 
             // concat all lines to generate the entry
             entryContent = lines.slice(0, 4).join("\n");
-            console.log(entryContent);
 
             registered_blog_entries[label] = {
                 timestamp: timestamp,
