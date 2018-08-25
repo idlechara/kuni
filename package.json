@@ -8,6 +8,7 @@
     "gulp-livereload": "^3.8.1"
   },
   "devDependencies": {
+    "fs-extra": "^7.0.0",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
