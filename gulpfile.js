@@ -17,6 +17,7 @@ const fsExtra                      = require('fs-extra');
 const blogMutex = new Mutex();
 
 fsExtra.removeSync(buildFolder);
+fsExtra.ensureDirSync(buildFolder);
 showdown.setOption('strikethrough', true);
 showdown.setOption('tables', true);
 
@@ -178,7 +179,7 @@ gulp.task('webserver', function() {
 });
 
 
-gulp.task('default', ['sass', ...registered_top_pages, 'webserver'], function() {
+gulp.task('default', ['sass', 'webserver', ...registered_top_pages], function() {
     gulp.watch('*.scss', ['sass']);
     registered_watchers.forEach(watched => {
         gulp.watch(watched.input_file, watched.trigger);    
